@@ -12,10 +12,12 @@
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
+   
 
     <!-- Custom styles for this template -->
     <link href="assets/css/ionicons.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/elements.css" rel="stylesheet">
 
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -41,7 +43,7 @@
 
     <div id="h">
       <div class="logo">
-        <h2>Hello! I am Ashpak</h2>
+        <h2>ASHPAK</h2>
       </div><!--/logo-->
       <div class="container centered">
         <div class="row">
@@ -74,10 +76,10 @@
       <div class="row">
         <h2 class="centered mb">I craft handsome sites & stunning apps<br/>that empower your startup.</h2>
         <div class="col-md-6">
-          <p>Hello, my name is Ashpak Shaikh. I am a passionate software engineer curious to learn new technologies and work on challenging projects. My interest lies in distributed systems, artificial intelligence, big data and mobile technologies. I live in San diego, and work at Intuit Inc.</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div><!--/col-md-6-->
         <div class="col-md-6">
-          <p>I like spending time with family and friends. I stay in United States but still belong to India by heart. I am a huge fan of Hindi movies and I watch something or the other every weekend. Besides that, I love to eat and try out new Indian restaurants.</p>
+          <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.</p>
         </div><!--/col-md-6-->
       </div><!--/row-->
     </div><!-- /.container -->
@@ -262,7 +264,26 @@
           <div class="col-md-8 col-md-offset-2">
             <h1>I live in the amazing San Diego</h1>
             <h3 class="mb">It is a really cool place...<br/>lots of beaches</h3>
-            <button class="btn btn-conf btn-clear">Contact me</button>
+            <div id="abc">
+						<!-- Popup Div Starts Here -->
+						<div id="popupContact">
+							<!-- Contact Us Form -->
+							<form id="form" method="post" name="form" enctype="text/plain">
+								<img id="close" src="assets/img/cancel.png" onclick="div_hide()">
+								<h2 style="color:#3366FF "><b><i>Contact Me</i></b></h2>
+								<hr>
+								<input id="name" name="name" placeholder="Name" type="text">
+								<input id="email" name="email" placeholder="Email" type="text">
+								<textarea id="msg" name="message" placeholder="Message"></textarea>
+								<a href="javascript:" id="submit" onclick = "check_empty();sendMail()" >Send</a>
+								
+							</form>
+							
+						</div>
+						<!-- Popup Div Ends Here -->
+					</div>
+					<!-- Display Popup Button -->
+					<button class="btn btn-conf btn-clear" onclick="div_show()">Contact me</button>
           </div>
         </div><!--/row-->
       </div><!--/container-->
@@ -295,6 +316,9 @@
     <script src="assets/js/jquery.prettyPhoto.js"></script>
     <script src="assets/js/jquery.isotope.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/my_js.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/utils.js"></script>
 
 
     <script>
